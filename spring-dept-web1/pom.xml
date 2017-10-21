@@ -8,7 +8,7 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>spring-dept-web1</artifactId>
-  <packaging>war</packaging>
+  <packaging>war</packaging>  
   <name>spring-dept-web1 Maven Webapp</name>
   <url>http://maven.apache.org</url>
   	<dependencies>
