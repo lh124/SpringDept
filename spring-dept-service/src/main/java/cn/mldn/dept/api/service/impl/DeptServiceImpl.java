@@ -21,32 +21,30 @@ public class DeptServiceImpl extends AbstractService implements IDeptService {
 		vo.setDflag(0);
 		return dao.doCreate(vo);
 	}
-
+	
 	@Override
 	public boolean edit(Dept vo)  {
 		return dao.doEdit(vo);
 	}
-
+	
 	@Override
 	public boolean delete(Long id)  {
 		return this.dao.doRemove(id);
 	}
-
+	
 	@Override
 	public Map<String,Object> perEdit(Long id)  {
 		Map<String,Object> map=new HashMap<>();
 		map.put("alldept", this.dao.findById(id));
 		return map;
 	}
-
-
-
+	
 	@Override
 	public Long get()  {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
+	
 	@Override
 	public Map<String, Object> list(String column, String keyWord, Long currentPage, Integer lineSize) {
 		Map<String, Object> map = new HashMap<String, Object>();
@@ -59,5 +57,4 @@ public class DeptServiceImpl extends AbstractService implements IDeptService {
 		}
 		return map;
 	}
-
 }
